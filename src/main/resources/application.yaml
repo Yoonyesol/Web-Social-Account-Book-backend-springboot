@@ -1,3 +1,15 @@
 spring:
   application:
     name: social-account-book-api
+
+  datasource:
+    url: jdbc:h2:mem:socialbook;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: qwer123
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    open-in-view: false
